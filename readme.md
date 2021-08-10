@@ -1,4 +1,4 @@
-# 8th Solution of SIIM-FISABIO-RSNA COVID19 Detection Competition
+# 8th Solution of [SIIM-FISABIO-RSNA COVID19 Detection Competition](https://www.kaggle.com/c/siim-covid19-detection)
 
 ## Environment Setup
 Anaconda virtual env is recommended. Python version is 3.7.
