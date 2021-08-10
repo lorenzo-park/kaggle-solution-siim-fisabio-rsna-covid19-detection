@@ -15,6 +15,12 @@ mkdir data-640 # Naming format is data-{image_size}
 cd data-640
 kaggle datasets download -d jihunlorenzopark/siim-fisabio-rsna-data-640 # Generated from the code here https://www.kaggle.com/c/siim-covid19-detection/discussion/239918
 unzip siim-fisabio-rsna-data-640.zip
+
+# For NIH CHEST X-ray dataset pretraining, run the below
+mkdir data-nih
+cd data-nih
+kaggle datasets download -d jihunlorenzopark/nih640
+unzip nih640.zip
 ```
 
 ## Run
@@ -24,7 +30,6 @@ Before running the script, update `root` parameter in `config.yaml` to your clon
 
 Also, unless you use wandb for logging training metrics/losses, turn off `logger` option to use default build-in logger of pytorch. i.e. `logger=False`
 ```bash
+# Please refer commands in this experiment.bash file.
 bash experiment.bash
-# or
-python run.py lr=3e-4 fold=0 gpus=1 es_patience=6
 ```
